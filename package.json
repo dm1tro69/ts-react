@@ -21,8 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "npm run typescript",
-    ""
+    "lint": "npm run typescript && npm run lint:ts",
+    "lint:ts": "eslint './src/**/*.{ts, tsx}'",
     "typescript": "tsc"
   },
   "eslintConfig": {
@@ -42,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.2.1"
   }
 }
